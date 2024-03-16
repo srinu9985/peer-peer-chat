@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        tr {
+            vertical-align: top;
+        }
+
+        .video {
+            width: 360px;
+            background-color: black;
+            margin: 2px 0;
+        }
+
+        button {
+            margin: 2;
+        }
+
+        #sharedBtns {
+            padding: 5;
+            background-color: papayawhip;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+<div id="video">
+    <table>
+        <thead>
+        <th>Local Video</th> <!-- Changed to "Local Video" header -->
+        </thead>
+        <tbody>
+        <tr>
+            <td>
+                <div id="localVideoContainer">
+                    <video id="localVideo" autoplay class="video"></video> <!-- Removed "remoteVideo" -->
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div id="sharedBtns">
+                    <button id="btnLocalVideo">Publish</button>
+                    <button id="btnStopVideo">Cancel</button> <!-- Added Cancel button -->
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<footer>
+    <script src="bundle_producer.js"></script>
+</footer>
+<script src="producer.js"></script> <!-- Moved producer.js script to the end of body -->
+</body>
+</html>

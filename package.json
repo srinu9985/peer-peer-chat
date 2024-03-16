@@ -1,0 +1,26 @@
+{
+  "name": "one-to-one-chat",
+  "version": "1.0.0",
+  "description": "simple one to one video chat application",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "watch:1": "watchify public/producer.js -o public/bundle_producer.js -v",
+    "watch:2": "watchify public/consumer.js -o public/bundle_consumer.js -v"
+  },
+  "keywords": [],
+  "author": "srinivas",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "httpolyglot": "^0.1.2",
+    "mediasoup": "^3.13.22",
+    "mediasoup-client": "^3.7.4",
+    "socket.io": "^4.7.4",
+    "socket.io-client": "^4.7.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
